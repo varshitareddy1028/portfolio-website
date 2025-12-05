@@ -1,35 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Website Project</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varshita Reddy | Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Portfolio Website</h1>
-    <p>Sample project built using HTML and CSS</p>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">VR</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This project is a simple portfolio website layout created using only
-      HTML and CSS. It demonstrates basic structure, sections, and styling.
-    </p>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">B.Tech CSE Graduate · Aspiring Web Developer</p>
+      <h1 class="hero-title">Hi, I'm <span>Varshita Reddy</span></h1>
+      <p class="hero-subtitle">
+        I’m a Computer Science graduate from Malla Reddy College of Engineering, Hyderabad,
+        with a strong interest in web development, problem solving and modern technologies.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View Projects</a>
+        <a href="#contact" class="btn ghost-btn">Contact Me</a>
+      </div>
+
+      <div class="hero-pill">
+        <i class="fa-solid fa-bolt"></i>
+        Open to entry-level Web & IT roles
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <h2>Quick Profile</h2>
+      <p>
+        B.Tech CSE · Hands-on with HTML & CSS · Basic MySQL · C, C++, Java ·
+        Comfortable with Windows & UNIX · Strong communication and cheerful attitude.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>Features</h2>
-    <ul>
-      <li>Header with project title</li>
-      <li>Sections for overview and features</li>
-      <li>Clean and simple layout</li>
-    </ul>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">A short introduction</p>
+
+    <div class="about-grid">
+      <p>
+        I am a B.Tech Computer Science graduate (2023) from
+        Malla Reddy College of Engineering, Hyderabad. I enjoy learning new
+        technologies and applying them through practical projects, especially in
+        areas like web development and machine learning.
+      </p>
+      <p>
+        I’m hardworking, quick at adapting to situations, and have good
+        communication skills. Outside academics, I love digital painting,
+        drawing and reading books, which helps me stay creative and focused.
+      </p>
+    </div>
   </section>
 
-  <footer>
-    <p>Project: Portfolio Website | HTML & CSS</p>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Technologies & strengths</p>
+
+    <div class="chip-row">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">C</span>
+      <span class="chip">C++</span>
+      <span class="chip">Java</span>
+      <span class="chip">SQL / MySQL</span>
+      <span class="chip">PLSQL</span>
+      <span class="chip">Git & GitHub</span>
+      <span class="chip">Windows & UNIX</span>
+      <span class="chip">MS Office (Word, Excel, PPT)</span>
+      <span class="chip">Problem Solving</span>
+      <span class="chip">Communication Skills</span>
+      <span class="chip">Digital Painting & Design Sense</span>
+      <span class="chip">English · Hindi · Telugu</span>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Some work that reflects my learning</p>
+
+    <div class="projects-grid">
+      <!-- Project: Portfolio Website -->
+      <article class="project-card">
+        <div class="project-tag">Web · HTML & CSS</div>
+        <h3>Portfolio Website Project</h3>
+        <p>
+          A colourful, responsive single-page portfolio website built using
+          pure HTML and CSS with smooth animations and hover effects.
+        </p>
+        <ul>
+          <li>Sections for Home, About, Skills, Projects and Contact.</li>
+          <li>CSS animations, gradients and glassmorphism-style cards.</li>
+          <li>Deployed using GitHub Pages for easy sharing.</li>
+        </ul>
+        <a href="https://varshitareddy1028.github.io/portfolio-website/" target="_blank" class="project-link">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
+        <a href="https://github.com/varshitareddy1028/portfolio-website" target="_blank" class="project-link">
+          <i class="fa-brands fa-github"></i> View Code
+        </a>
+      </article>
+
+      <!-- Project: BullyNet -->
+      <article class="project-card">
+        <div class="project-tag">Machine Learning</div>
+        <h3>BullyNet: Unmasking Cyber Bullies</h3>
+        <p>
+          A machine learning project focused on detecting cyber bullies on
+          social networks using signed network analysis and centrality measures.
+        </p>
+        <ul>
+          <li>Used logistic regression, random forest and SVM algorithms.</li>
+          <li>Analysed user attitudes and interactions to identify bullying users.</li>
+          <li>Strengthened concepts of supervised learning and model comparison.</li>
+        </ul>
+        <span class="project-link disabled-link">
+          Academic major project
+        </span>
+      </article>
+
+      <!-- Project: Emotion Detection -->
+      <article class="project-card">
+        <div class="project-tag">ML · Python</div>
+        <h3>Emotion Detection Using Speech & Facial Expressions</h3>
+        <p>
+          A bimodal emotion recognition system that combines facial expressions
+          and speech signals to classify human emotions.
+        </p>
+        <ul>
+          <li>CNN for facial emotion recognition.</li>
+          <li>MFCC + SVM and Random Forest for audio-based emotion detection.</li>
+          <li>Combined multimodal predictions to improve accuracy.</li>
+        </ul>
+        <span class="project-link disabled-link">
+          Academic project using Python & ML
+        </span>
+      </article>
+
+      <!-- Project: GenAI Mini Project -->
+      <article class="project-card">
+        <div class="project-tag">GenAI</div>
+        <h3>Generative AI: Introduction & Applications</h3>
+        <p>
+          Course-based mini project on Generative AI completed through online
+          learning, exploring real-world use cases and tools.
+        </p>
+        <ul>
+          <li>Learned fundamentals of Generative AI and Large Language Models.</li>
+          <li>Practised generating text, images and code using GenAI tools.</li>
+          <li>Documented applications across IT, healthcare, finance and education.</li>
+        </ul>
+        <span class="project-link disabled-link">
+          Documentation & concept project
+        </span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Feel free to reach out</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:Varshitareddy1028@gmail.com">Varshitareddy1028@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Mobile</h3>
+        <p><a href="tel:+919063002665">+91 90630 02665</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/varshitareddy1028" target="_blank">github.com/varshitareddy1028</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/varshita-reddy-a9785a287"
+             target="_blank">
+            linkedin.com/in/varshita-reddy-a9785a287
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    © 2025 Varshita Reddy · Portfolio Website Project
   </footer>
 </body>
 </html>
